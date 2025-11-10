@@ -1,0 +1,122 @@
+@font-face {
+    font-family: 'DeliusSwashCaps';
+    src: url('../../../../public/fonts/DeliusSwashCaps-Regular.woff2') format('woff2'), 
+    url('../../../../public/fonts/DeliusSwashCaps-Regular.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: 'RedHatDisplay';
+    src: url('../../../../public/fonts/RedHatDisplay-VariableFont_wght.woff2') format('woff2'), 
+    url('../../../../public/fonts/RedHatDisplay-Italic-VariableFont_wght.woff2') format('woff2');
+}
+
+* {
+    font-family: 'RedHatDisplay';
+}
+
+h2 {
+    font-family: 'DeliusSwashCaps';
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #A4DBBB;
+  color: #F6F6ED;
+  margin: 40px 200px;
+  padding: 40px 100px;
+  border-radius: 30px;
+}
+
+    .form-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    }
+
+    p {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    form {
+    display: flex;
+    flex-direction: column;
+    }
+
+    fieldset {
+    display: flex;
+    justify-content: space-between;
+    border: none;
+    gap: 20px;
+    }
+
+        .input-group {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        }
+
+        input, textarea {
+        background-color: #F6F6ED;
+        color: #89B59C;
+        font-weight: bold;
+        border-radius: 10px;
+        border: none;
+        margin: 10px 0;
+        padding: 10px;
+        }
+
+        input {
+        height: 30px;
+        width: 90%;
+        }
+
+        textarea {
+        height: 200px;
+        }
+
+        small {
+        color: #F44336;
+        font-weight: normal;
+        font-size: 0.85rem;
+        }
+
+    button {
+    width: min-content;
+    border: solid #F6F6ED;
+    border-radius: 10px;
+    height: 30px;
+    background-color: #A4DBBB;
+    color: #F6F6ED;
+    font-weight: bold;
+    margin: 20px 0 10px;
+    padding: 0 15px;
+    cursor: pointer;
+    }
+        button:hover {
+            background-color: #F6F6ED;
+            color: #A4DBBB;
+        }
+
+    .success-message {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #F6F6ED;
+    color: #89B59C;
+    font-weight: bold;
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 20px;
+    animation: fadeIn 0.8s ease forwards;
+    }
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}

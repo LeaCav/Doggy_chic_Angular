@@ -1,1 +1,38 @@
+<div class="form">
+  <div class="form-title">
+    <img src="icons/icons8-stylo-100.png" alt="contact">
+    <h2>Écrivez-nous !</h2>
+  </div>
 
+  <p>Vous avez une question, besoin d’un renseignement ou tout simplement envie de nous donner votre avis? Vous pouvez nous contacter par mail  via ce formulaire. 
+    Réponse garantie dans les plus bref délais.</p>
+
+  <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+
+    <fieldset>
+      <div class="input-group">
+        <input type="text" formControlName="name" placeholder="Nom ...">
+        <small *ngIf="submitted && f['name'].errors?.['required']">Le nom est obligatoire</small>
+      </div>
+
+      <div class="input-group">
+        <input type="email" formControlName="mail" placeholder="Mail ...">
+        <small *ngIf="submitted && f['mail'].errors?.['required']">L’email est obligatoire</small>
+        <small *ngIf="submitted && f['mail'].errors?.['email']">Adresse email invalide</small>
+      </div>
+    </fieldset>
+
+    <div class="input-group">
+      <textarea formControlName="message" placeholder="Message ..."></textarea>
+      <small *ngIf="submitted && f['message'].errors?.['required']">Le message est obligatoire</small>
+    </div>
+
+    <button type="submit">Envoyer</button>
+
+    <!-- Message de validation -->
+    <div class="success-message" *ngIf="success">
+      <img src="icons/icons8-avion-en-papier-100.png" alt="courrier">
+      <p>Merci pour ton message ! 🐾 Nous te répondrons très vite.</p>
+    </div>
+  </form>
+</div>
