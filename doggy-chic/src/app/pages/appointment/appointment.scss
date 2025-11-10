@@ -1,0 +1,28 @@
+@font-face {
+    font-family: 'DeliusSwashCaps';
+    src: url('../../../../public/fonts/DeliusSwashCaps-Regular.woff2') format('woff2'), 
+    url('../../../../public/fonts/DeliusSwashCaps-Regular.ttf') format('ttf');
+}
+
+.background {
+    background-image: url('../../../../public/img/fond_pattes.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 40px 450px;
+    padding: 30px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    font-family: 'DeliusSwashCaps';
+    color: #F6F6ED;
+}
+
+img {
+    border-radius: 30px;
+}

@@ -1,0 +1,20 @@
+<div class="mosaics">
+  <div *ngFor="let set of imageSets" class="mosaic">
+    <div class="row_1">
+      <div class="photo photo-1" [style.background-image]="'url(' + set[0].url + ')'"></div>
+      <div class="col">
+        <div class="photo photo-2" [style.background-image]="'url(' + set[1].url + ')'"></div>
+        <div class="row_2">
+          <div class="photo photo-3" [style.background-image]="'url(' + set[2].url + ')'"></div>
+          <div class="photo photo-4" [style.background-image]="'url(' + set[3].url + ')'"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row_3">
+      <div class="photo photo-5" [style.background-image]="'url(' + set[4].url + ')'"></div>
+      <div class="photo photo-6" [style.background-image]="'url(' + set[5].url + ')'"></div>
+    </div>
+  </div>
+</div>
+

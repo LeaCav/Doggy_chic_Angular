@@ -1,0 +1,33 @@
+@font-face {
+    font-family: 'DeliusSwashCaps';
+    src: url('../../../public/fonts/DeliusSwashCaps-Regular.woff2') format('woff2'), 
+    url('../../../public/fonts/DeliusSwashCaps-Regular.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: 'RedHatDisplay';
+    src: url('../../../public/fonts/RedHatDisplay-VariableFont_wght.woff2') format('woff2'), 
+    url('../../../public/fonts/RedHatDisplay-Italic-VariableFont_wght.woff2') format('woff2');
+}
+
+* {
+    font-family: 'RedHatDisplay';
+}
+
+h2, h3 {
+    font-family: 'DeliusSwashCaps';
+}
+
+.trust {
+    display: flex;
+    flex-direction: column;
+    background-color: #F6F6ED;
+    color: #F38957;
+    margin: 40px;
+    padding: 40px;
+    border-radius: 30px;
+}
+
+.trust_title {
+    display: flex;
+}

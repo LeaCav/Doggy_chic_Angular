@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'Super-Malibu';
+    src: url('../../../../public/fonts/Super-Malibu.woff2') format('woff2'), url('../../../../public/fonts/Super-Malibu.ttf') format('truetype');
+}
+
+* {
+    font-family: 'Super-Malibu';
+    color: #F6F6ED;
+}
+
+.header {
+    background-image: url('../../../../public/img/header.png');
+    display: flex;
+    margin: 0;
+    padding: 20px 200px 40px;
+}
+
+.img , .title {
+    width: 50%;
+}
+img {
+    height: 130px;
+    border-radius: 70px;
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: lighter;
+}

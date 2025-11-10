@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'RedHatDisplay';
+    src: url('../../../../public/fonts/RedHatDisplay-VariableFont_wght.woff2') format('woff2'), 
+    url('../../../../public/fonts/RedHatDisplay-Italic-VariableFont_wght.woff2') format('woff2');
+}
+
+* {
+    font-family: 'RedHatDisplay';
+    color: #F6F6ED;
+}
+
+.footer {
+     position: relative;
+    background-color: #FFCB37;
+    padding: 0 50px;
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 120px;
+    overflow: visible;
+}
+
+.dog {
+    position: absolute;
+    bottom: 80%;
+    left: 3%;
+    height: 100px;
+    z-index: 2;
+}
+
+
+.copyright , .link {
+    width: 50%;
+}
+
+a :hover {
+    opacity: 0.5;
+}
