@@ -27,3 +27,56 @@ h1 {
     font-size: 50px;
     font-weight: lighter;
 }
+
+/* ---------------------- */
+/*        RESPONSIVE      */
+/* ---------------------- */
+
+/* Tablette */
+@media (max-width: 1024px) {
+  .header {
+    padding: 20px 80px 30px;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  img {
+    height: 110px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px 40px;
+  }
+
+  .img, .title {
+    width: 100%;
+  }
+
+  img {
+    height: 100px;
+    margin-bottom: 10px;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+}
+
+/* Très petit mobile */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 30px;
+  }
+
+  img {
+    height: 80px;
+  }
+}

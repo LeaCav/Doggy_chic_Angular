@@ -58,3 +58,85 @@ h2, h3 {
         height: 200px;
         margin: 10px;
     }
+
+    /* ---------------------- */
+    /*        RESPONSIVE      */
+    /* ---------------------- */
+
+    /* Tablette */
+@media (max-width: 1024px) {
+  .trust, .engagement {
+    padding: 30px 40px;
+  }
+
+  .trust_title h2, .engagement_title h2 {
+    font-size: 1.8rem;
+  }
+
+  .trust_title img, .engagement_title img {
+    height: 60px;
+  }
+
+  .mosaic {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    padding: 0 20px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .trust, .engagement {
+    padding: 25px;
+    margin: 30px 20px;
+  }
+
+  .trust_title, .engagement_title {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .trust_title h2, .engagement_title h2 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 0.95rem;
+    text-align: justify;
+  }
+
+  .mosaic {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin: 40px 10px;
+  }
+
+  .portrait {
+    height: 200px;
+  }
+
+  .landscape {
+    height: 150px;
+  }
+}
+
+/* Très petit mobile */
+@media (max-width: 480px) {
+  .trust, .engagement {
+    padding: 20px;
+  }
+
+  .trust_title h2, .engagement_title h2 {
+    font-size: 1.3rem;
+  }
+
+  .mosaic {
+    grid-template-columns: 1fr;
+  }
+
+  .portrait, .landscape {
+    width: 100%;
+    height: 220px;
+  }
+}

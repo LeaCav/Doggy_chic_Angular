@@ -37,3 +37,66 @@
 a :hover {
     opacity: 0.5;
 }
+
+/* ---------------------- */
+/*        RESPONSIVE      */
+/* ---------------------- */
+
+/* Tablette */
+@media (max-width: 1024px) {
+  .footer {
+    padding: 0 30px;
+  }
+
+  .dog {
+    height: 80px;
+    bottom: 85%;
+  }
+
+  .link img {
+    height: 40px;
+    width: 40px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: auto;
+    padding: 30px 0;
+  }
+
+  .dog {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    height: 80px;
+    margin-bottom: 15px;
+  }
+
+  .copyright,
+  .link {
+    width: 100%;
+    text-align: center;
+  }
+
+  .link img {
+    height: 40px;
+    width: 40px;
+    margin-top: 10px;
+  }
+}
+
+/* Très petit mobile */
+@media (max-width: 480px) {
+  .dog {
+    height: 70px;
+  }
+
+  .copyright small {
+    font-size: 0.8rem;
+  }
+}
